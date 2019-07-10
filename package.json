@@ -1,0 +1,12 @@
+{
+  "name": "@unrest/element",
+  "version": "0.0.1",
+  "description": "functions for creating dom elements in the unrest framework",
+  "main": "index.js",
+  "repository": "github.com/chriscauley/ur-element",
+  "author": "chriscauley",
+  "license": "ISC",
+  "dependencies": {
+    "riot": "^3.13.2"
+  }
+}
