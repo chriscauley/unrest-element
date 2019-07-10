@@ -9,8 +9,9 @@ import create from './create'
 // this would also let the create('div',{...}) go in uR.router.ready()
 //#! TODO this breaks if not in browser (document DNE)
 // move to unrest.io/index.js
-if (typeof document !== "undefined") {
-  ;[config.mount_alerts_to, config.mount_to].forEach(selector => {
+if (typeof document !== 'undefined') {
+  const targets = [config.mount_alerts_to, config.mount_to]
+  targets.forEach(selector => {
     if (!document.querySelector(selector)) {
       create('div', {
         id: selector.replace('#', ''),
